@@ -1,0 +1,102 @@
+.footer {
+    background-color: $title-text-color;
+  }
+  
+  .footer-nav-container{
+    display: flex;
+  }
+  
+  .footer-navigation {
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-logo-item {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $background-color;
+    text-decoration:none;
+  }
+  
+  .auth-address-footer-address {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-style: normal;
+    color: $background-color;
+  }
+  
+  .auth-address-footer{
+    margin-bottom: 10px;
+    font-style: normal;
+  }
+  
+  .auth-nav-footer {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration:none;
+  }
+  
+  .join {
+    padding-top: 72px;
+    margin-left: 70px;
+  }
+  
+  .text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $background-color;
+  }
+  
+  .icon-light {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .form {
+    padding-top: 72px;
+    padding-right: 0;
+    padding-bottom: 94px;
+    margin-left: 92px;
+   }
+  
+   .contact-form {
+    display: flex;
+    padding-top: 20px;
+    align-items: baseline;
+    top: 108px;
+    left: 93;
+  }
+  
+  .contact-form-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $title-text-color;
+    padding-left: 16px;
+    color: $background-color;
+    outline: none;
+  }
+  
+  .subscribe {
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    margin-left: 12px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: $accent-color;
+    color: $background-color;
+  }

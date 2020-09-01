@@ -1,0 +1,116 @@
+.modal-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+    }
+    
+    .modal-form {
+    display: flex;
+    flex-direction: column;
+
+    & label {
+      margin-bottom: 4px;
+      }
+    }
+      
+    .modal-forms {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1.67;
+      letter-spacing: 0.01em;
+      color: #757575;
+      position: relative;
+
+      .modal-form-input {
+        height: 40px;
+      }
+
+      .modal-text {
+        height: 120px;
+      }
+
+      &:hover {
+        fill: $accent-color;
+      }
+    }
+    
+    .hfm:hover,
+    .hfm:focus {
+    border: 1px solid $accent-color;
+    }
+    
+    .name-photo {
+      position: absolute;
+      bottom: 14px;
+      left: 15px;
+    }
+    
+    .tel-photo {
+      position: absolute;
+      bottom: 13.74px;
+      left: 14.27px;
+    }
+      
+    .email-photo {
+      position: absolute;
+      bottom: 14px;
+      left: 13.5px;
+    }
+    
+    .modal-form-input, 
+    .modal-text {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+    .modal-text {
+      resize: none;
+      padding: 15px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1.67;
+      letter-spacing: 0.01em;
+    }
+    
+    .chekbox {
+      display: flex;
+      align-items: baseline;
+    }
+    
+    .modal-form-policy {
+      top: 25px;
+    }
+    
+    .modal-form-label {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: #757575;
+      padding-left: 8.38px;
+    }
+    
+    .dogovor {
+      color: $accent-color;
+    }
+      
+    .modal-form-btn {
+      position: absolute;
+      width: 200px;
+      height: 50px;
+      bottom: 40px;
+      right: 164px;
+      border: none;
+      border-radius: 4px;
+      background-color: $accent-color;
+      color: $background-color;
+    }

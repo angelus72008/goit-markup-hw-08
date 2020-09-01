@@ -1,0 +1,40 @@
+.features-container {
+    padding-top: 107px;
+  }
+  
+  .features {
+    display: flex;
+  }
+  
+   .features-title-text:not(:last-child) {
+    margin-right: 30px;
+    }
+  
+  .container-features {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
+  .features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+  margin-bottom: 10px;
+  }
+  
+  .features-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $text-color;
+  }

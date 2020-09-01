@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../goit-markup-hw-07/sass/layout/hero.scss"
+    ],
+    "names": [],
+    "file": "hero.css"
+}

@@ -1,0 +1,127 @@
+.page-header {
+    padding-top: 25px;
+    padding-bottom: 24px;
+
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+}
+  
+.logo-list {
+    display: flex;
+}
+  
+.logo-item {
+    margin-right:70px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    text-decoration:none;
+}
+
+.logo-item-list {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    text-decoration:none;
+}
+   
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.navigation .link.current::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    margin-top: 46px;
+}
+  
+.link {
+    position: relative;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.143;
+     letter-spacing: 0.02em;
+     color: $title-text-color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
+        color: $accent-color;
+     }
+}
+
+.auth-nav:hover,
+.auth-nav:focus {
+   color: $accent-color;
+}   
+
+.navigation .link.current {
+    color: $accent-color;
+}
+
+.navigation .link {
+    text-decoration:none;
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}  
+  
+.auth {
+    font-style: normal;
+} 
+  
+.page-header .auth {
+    margin-left: auto;
+} 
+  
+.auth-nav-links {
+  display: flex; 
+}
+
+.auth-nav-links li:last-child {
+  margin-left: 30px;
+}
+
+.auth-nav {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.02em;
+color: $text-color;
+text-decoration: none;
+margin-right: 40px;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:last-child{
+    margin-right: 0;
+  }  
+}
+
+.mail-svg {
+  margin-right: 10px;
+}
+
+.phone-svg {
+  margin-right: 10px;
+} 
+
+.mail-svg,
+.phone-svg {
+  fill: currentColor;
+}
