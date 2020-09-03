@@ -1,16 +1,147 @@
-.page-header {
-    padding-top: 25px;
-    padding-bottom: 24px;
+.page-header-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    &-container {
-        display: flex;
-        align-items: center;
+.menu-btn {
+    position: relative;
+    z-index: 100;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    &-krestic {
+        display: none;
     }
 }
-  
-.logo-list {
+
+.menu-btn.is-open .menu-btn-krestic{
+  display: block;
+}
+
+.menu-btn.is-open .menu-btn-burger{
+    display: none;
+}
+
+.navigation-list-item {
+font-weight: 500;
+font-size: 18px;
+line-height: 1.167;
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.header-auth-address{
+font-weight: 500;
+font-size: 18px;
+line-height: 1.167;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.header-auth-address {
+    font-style: normal;
+}
+
+.navigation .link.current::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    margin-top: 149px;
+    margin-left: 210px;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-wrapper {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 480px;
+        height: 453px;
+        padding-top: 120px;
+        padding-right: 140px;
+        padding-left: 140px;
+        padding-bottom: 60px;
+        text-align: center;
+        display: none;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    
+        &.is-open {
+            display: block;
+        }
+    }
+
+    .navigation-list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    
+    
+    .logo-list {
+        margin-bottom: 60px;
+    }
+    
+    .header-auth-address:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .page-header {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+.page-header-container {
+    justify-content: flex-start;
+}
+
+.page-header {
+    height: 80px;
+}
+
+.menu-wrapper {
     display: flex;
 }
+
+.navigation {
+    display: flex;
+    margin-right: 84px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.auth-nav-links {
+    margin-top: 21px;
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+} 
+
+
+// .page-header {
+//     padding-top: 25px;
+//     padding-bottom: 24px;
+
+//     &-container {
+//         display: flex;
+//         align-items: center;
+//     }
+// }
   
 .logo-item {
     margin-right:70px;
@@ -30,98 +161,103 @@
     color: $accent-color;
     text-decoration:none;
 }
+
+// .logo-list {
+//     display: flex;
+// }
+  
    
-.navigation{
-    display: flex;
-    align-items: center;
-}
+// .navigation{
+//     display: flex;
+//     align-items: center;
+// }
 
-.navigation .link.current::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: $accent-color;
-    border-radius: 2px;
-    margin-top: 46px;
-}
+// .navigation .link.current::after {
+//     position: absolute;
+//     content: "";
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 4px;
+//     background-color: $accent-color;
+//     border-radius: 2px;
+//     margin-top: 46px;
+// }
   
-.link {
-    position: relative;
-     font-weight: 500;
-     font-size: 14px;
-     line-height: 1.143;
-     letter-spacing: 0.02em;
-     color: $title-text-color;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// .link {
+//     position: relative;
+//      font-weight: 500;
+//      font-size: 14px;
+//      line-height: 1.143;
+//      letter-spacing: 0.02em;
+//      color: $title-text-color;
+//      transition-duration: 250ms;
+//      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-     &:hover,
-     &:focus {
-        color: $accent-color;
-     }
-}
+//      &:hover,
+//      &:focus {
+//         color: $accent-color;
+//      }
+// }
 
-.auth-nav:hover,
-.auth-nav:focus {
-   color: $accent-color;
-}   
+// .auth-nav:hover,
+// .auth-nav:focus {
+//    color: $accent-color;
+// }   
 
-.navigation .link.current {
-    color: $accent-color;
-}
+// .navigation .link.current {
+//     color: $accent-color;
+// }
 
-.navigation .link {
-    text-decoration:none;
-}
+// .navigation .link {
+//     text-decoration:none;
+// }
 
-.navigation-list-item:not(:last-child) {
-    margin-right: 50px;
-}  
+// .navigation-list-item:not(:last-child) {
+//     margin-right: 50px;
+// }  
   
-.auth {
-    font-style: normal;
-} 
+// .auth {
+//     font-style: normal;
+// } 
   
-.page-header .auth {
-    margin-left: auto;
-} 
+// .page-header .auth {
+//     margin-left: auto;
+// } 
   
-.auth-nav-links {
-  display: flex; 
-}
+// .auth-nav-links {
+//   display: flex; 
+// }
 
-.auth-nav-links li:last-child {
-  margin-left: 30px;
-}
+// .auth-nav-links li:last-child {
+//   margin-left: 30px;
+// }
 
-.auth-nav {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.143;
-letter-spacing: 0.02em;
-color: $text-color;
-text-decoration: none;
-margin-right: 40px;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// .auth-nav {
+// font-weight: 500;
+// font-size: 14px;
+// line-height: 1.143;
+// letter-spacing: 0.02em;
+// color: $text-color;
+// text-decoration: none;
+// margin-right: 40px;
+// transition-duration: 250ms;
+// transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-&:last-child{
-    margin-right: 0;
-  }  
-}
+// &:last-child{
+//     margin-right: 0;
+//   }  
+// }
 
-.mail-svg {
-  margin-right: 10px;
-}
+// .mail-svg {
+//   margin-right: 10px;
+// }
 
-.phone-svg {
-  margin-right: 10px;
-} 
+// .phone-svg {
+//   margin-right: 10px;
+// } 
 
-.mail-svg,
-.phone-svg {
-  fill: currentColor;
-}
+// .mail-svg,
+// .phone-svg {
+//   fill: currentColor;
+// }
